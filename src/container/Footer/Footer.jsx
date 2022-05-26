@@ -99,13 +99,25 @@ const Footer = () => {
               onChange={handleChangeInput}
             ></textarea>
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
-            Send message
-          </button>
+          {!loading ? (
+            <button type="button" className="p-text" onClick={handleSubmit}>
+              Send Message
+            </button>
+          ) : (
+            <div
+              class={
+                !darkTheme
+                  ? "lds-dual-ring"
+                  : "lds-dual-ring lds-dual-ring-dark"
+              }
+            ></div>
+          )}
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch</h3>
+          <h3 className={!darkTheme ? "head-text" : "head-text head-text-dark"}>
+            Thank you for getting in touch
+          </h3>
         </div>
       )}
     </>
