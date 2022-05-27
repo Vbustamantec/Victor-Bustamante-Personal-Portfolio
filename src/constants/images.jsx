@@ -1,23 +1,7 @@
-import email from "../assets/email.png";
-import css from "../assets/css.png";
-import figma from "../assets/figma.png";
-import flutter from "../assets/flutter.png";
-import git from "../assets/git.png";
-import graphql from "../assets/graphql.png";
-import html from "../assets/html.png";
-import javascript from "../assets/javascript.png";
-import mu5 from "../assets/mu5.png";
-import node from "../assets/node.png";
-import python from "../assets/python.png";
-import react from "../assets/react.png";
-import redux from "../assets/redux.png";
-import sass from "../assets/sass.png";
-import typescript from "../assets/typescript.png";
-import vue from "../assets/vue.png";
-
-import about01 from "../assets/about01.png";
-
-import circle from "../assets/circle.svg";
+import email from "../assets/email.webp";
+import typescript from "../assets/typescript.webp";
+import react from "../assets/react.webp";
+import redux from "../assets/redux.webp";
 import logo from "../assets/logo.png";
 import logoDarkMode from "../assets/logoDarkMode.png";
 import backgroundHeader from "../assets/backgroundHeader.webp";
@@ -25,23 +9,9 @@ import backgroundHeader from "../assets/backgroundHeader.webp";
 export default {
   logoDarkMode,
   backgroundHeader,
-  email,
-  css,
-  figma,
-  flutter,
-  git,
-  graphql,
-  html,
-  javascript,
-  mu5,
-  node,
-  python,
+  typescript,
   react,
   redux,
-  sass,
-  typescript,
-  vue,
-  about01,
-  circle,
+  email,
   logo,
 };
