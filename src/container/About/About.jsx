@@ -19,8 +19,7 @@ const About = () => {
   return (
     <>
       <h2 className={!darkTheme ? "head-text" : "head-text head-text-dark"}>
-        I know That <span>Good Development</span> Means{" "}
-        <span>Good Bussiness</span>
+        Get to know <span>Me</span>
       </h2>
 
       <div className="app__profiles">

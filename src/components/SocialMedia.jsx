@@ -8,24 +8,24 @@ const SocialMedia = () => {
     <div
       className={!darkTheme ? "app__social" : "app__social-dark app__social"}
     >
-      <div>
-        <a
-          href="https://github.com/Vbustamantec"
-          target="_blank"
-          rel="noreferrer"
-        >
+      <a
+        href="https://github.com/Vbustamantec"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div>
           <BsGithub />
-        </a>
-      </div>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/victor-bustamante-cera/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        </div>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/victor-bustamante-cera/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div>
           <BsLinkedin />
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   );
 };

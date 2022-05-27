@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <>
       <h2 className={!darkTheme ? "head-text" : "head-text head-text-dark"}>
-        My Creative <span>Portfolio</span> Section:
+        My <span>Development</span> Portfolio:
       </h2>
       <div className="app__work-filter">
         {darkTheme
