@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { FooterWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";

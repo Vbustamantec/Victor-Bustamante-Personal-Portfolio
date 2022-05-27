@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { motion } from "framer-motion";
-import Switch from "react-switch";
 
 import { images } from "../../constants";
 import "./Navbar.scss";
