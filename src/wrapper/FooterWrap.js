@@ -6,7 +6,14 @@ const FooterWrap = (Component, idName, classNames) =>
   function HigherOrderComponent() {
     const { darkTheme } = useThemeContext();
     return (
-      <div id={idName} className={`app__container ${classNames}`}>
+      <div
+        id={idName}
+        className={
+          !darkTheme
+            ? `app__container ${classNames}`
+            : "app__container app-true"
+        }
+      >
         <SocialMedia />
         <div className="app__wrapper app__flex">
           <Component />

@@ -58,7 +58,7 @@ const Work = () => {
                 </div>
               )
             )
-          : ["Web App", "Web3/Blockchain", "React", "All"].map(
+          : ["All", "Web App", "Web3/Blockchain", "React", "Wordpress"].map(
               (item, index) => (
                 <div
                   key={index}
