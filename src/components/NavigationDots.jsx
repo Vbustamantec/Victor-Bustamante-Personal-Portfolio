@@ -13,9 +13,7 @@ const NavigationDots = ({ active }) => {
               style={active === item ? { backgroundColor: "#EBA140" } : {}}
               key={item + index}
               href={`#${item}`}
-            >
-              {item}
-            </a>
+            ></a>
           ))
         : ["home", "about", "work", "skills", "contact"].map((item, index) => (
             <a
@@ -23,9 +21,7 @@ const NavigationDots = ({ active }) => {
               style={active === item ? { backgroundColor: "#313BAC" } : {}}
               key={item + index}
               href={`#${item}`}
-            >
-              {item}
-            </a>
+            ></a>
           ))}
     </div>
   );

@@ -104,7 +104,7 @@ const Footer = () => {
             </button>
           ) : (
             <div
-              class={
+              className={
                 !darkTheme
                   ? "lds-dual-ring"
                   : "lds-dual-ring lds-dual-ring-dark"

@@ -6,15 +6,16 @@ import "./App.scss";
 const App = () => {
   const { darkTheme } = useThemeContext();
   return (
-    <div className={darkTheme ? "app app-true" : "app"}>
-      <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Skills />
-      {/*  <Testimonials /> */}
-      <Footer />
-    </div>
+    <>
+      <div className={darkTheme ? "app app-true" : "app"}>
+        <Navbar />
+        <Header />
+        <About />
+        <Work />
+        <Skills />
+        <Footer />
+      </div>
+    </>
   );
 };
 

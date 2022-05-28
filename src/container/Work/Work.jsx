@@ -44,7 +44,7 @@ const Work = () => {
       </h2>
       <div className="app__work-filter">
         {darkTheme
-          ? ["Web App", "Web3/Blockchain", "React", "All"].map(
+          ? ["All", "Web App", "Web3/Blockchain", "React", "Wordpress"].map(
               (item, index) => (
                 <div
                   key={index}
@@ -129,6 +129,29 @@ const Work = () => {
                   {work.tags[0]}
                 </p>
               </div>
+            </div>
+            <div className="p-text-bold app__work-content app__button-container">
+              <a
+                href={work.projectLink}
+                className={
+                  !darkTheme
+                    ? "p-text-bold app__button-link"
+                    : "p-text-bold app__button-link app__button-link-dark"
+                }
+              >
+                Visit Site
+              </a>
+
+              <a
+                href={work.codeLink}
+                className={
+                  !darkTheme
+                    ? "p-text-bold app__button-link"
+                    : "p-text-bold app__button-link app__button-link-dark"
+                }
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
         ))}
