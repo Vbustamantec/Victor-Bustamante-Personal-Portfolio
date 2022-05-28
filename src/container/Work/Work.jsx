@@ -44,32 +44,28 @@ const Work = () => {
       </h2>
       <div className="app__work-filter">
         {darkTheme
-          ? ["All", "Web App", "Web3/Blockchain", "React", "Wordpress"].map(
-              (item, index) => (
-                <div
-                  key={index}
-                  onClick={() => handleWorkFilter(item)}
-                  className={`app__work-filter-item-dark app__flex p-text-bold ${
-                    activeFilter === item ? "item-active-dark" : ""
-                  }`}
-                >
-                  {item}
-                </div>
-              )
-            )
-          : ["All", "Web App", "Web3/Blockchain", "React", "Wordpress"].map(
-              (item, index) => (
-                <div
-                  key={index}
-                  onClick={() => handleWorkFilter(item)}
-                  className={`app__work-filter-item app__flex p-text ${
-                    activeFilter === item ? "item-active" : ""
-                  }`}
-                >
-                  {item}
-                </div>
-              )
-            )}
+          ? ["All", "Web App", "React", "Wordpress"].map((item, index) => (
+              <div
+                key={index}
+                onClick={() => handleWorkFilter(item)}
+                className={`app__work-filter-item-dark app__flex p-text-bold ${
+                  activeFilter === item ? "item-active-dark" : ""
+                }`}
+              >
+                {item}
+              </div>
+            ))
+          : ["All", "Web App", "React", "Wordpress"].map((item, index) => (
+              <div
+                key={index}
+                onClick={() => handleWorkFilter(item)}
+                className={`app__work-filter-item app__flex p-text ${
+                  activeFilter === item ? "item-active" : ""
+                }`}
+              >
+                {item}
+              </div>
+            ))}
       </div>
 
       <motion.div
