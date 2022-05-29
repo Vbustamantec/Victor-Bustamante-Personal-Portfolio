@@ -4,16 +4,18 @@ import { useThemeContext } from "./context/ThemeContextProvider";
 import "./App.scss";
 
 const App = () => {
-  const { darkTheme } = useThemeContext();
+  const { darkTheme, setToggle } = useThemeContext();
   return (
     <>
       <div className={darkTheme ? "app app-true" : "app"}>
         <Navbar />
-        <Header />
-        <About />
-        <Work />
-        <Skills />
-        <Footer />
+        <main onClick={() => setToggle(false)}>
+          <Header />
+          <About />
+          <Work />
+          <Skills />
+          <Footer />
+        </main>
       </div>
     </>
   );

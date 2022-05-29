@@ -7,8 +7,7 @@ import "./Navbar.scss";
 import { useThemeContext } from "../../context/ThemeContextProvider";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-  const { setDarkTheme, darkTheme } = useThemeContext();
+  const { setDarkTheme, darkTheme, toggle, setToggle } = useThemeContext();
 
   return (
     <nav className={darkTheme ? "app__navbar app__navbar-true" : "app__navbar"}>
