@@ -21,7 +21,7 @@ const FooterWrap = (Component, idName, classNames) =>
           <div
             className={!darkTheme ? "copyright" : "copyright copyright-dark"}
           >
-            <p className="p-text">@2022 Victor Bustamante</p>
+            <p className="p-text">©2022 Victor Bustamante</p>
             <p className="p-text">All Rights Reserved</p>
           </div>
         </div>
